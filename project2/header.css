@@ -1,0 +1,128 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    flex: none;
+    display: block;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.nav{
+    width: 100%;
+    background-color: #34568b;
+    height: 35px;
+    padding-top: 10px;
+    display: inline-flex;
+}
+.nav-list{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: flex-start;
+    margin: 0 5px;
+}
+.nav-list.right{
+      display: flex;
+      justify-content: flex-end;
+      margin-right: 10px;
+}
+.nav-list a{
+    color: white;
+    text-decoration: none;
+    padding-right: 2px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+.nav-list a:hover{
+    background-color: #3e8e41;
+}
+.nav-list a:active{
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+.sub-nav{
+    display: flex;
+    padding-top: 10px;
+    padding-left: 50px;
+    font-size: x-large;
+    color: #34568b;
+}
+.name{
+    font-size: larger;
+    padding-left: 13px;
+    padding-right: 10px;
+}
+input{
+display: flex;
+flex-direction: row;
+flex-grow: 2;
+margin-left: 80px;
+}
+.sub-nav a:hover{
+    background-color: #3e8e41;
+}
+.sub-nav a:active{
+        background-color: #3e8e41;
+        box-shadow: 0 5px #666;
+        transform: translateY(4px);
+}
+.sub-nav a{
+    background-color: #34568b;
+    padding-left: 10px;
+    padding-right: 15px;
+    font-size: small;
+    line-height: 30px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin-right: 58px;
+}
+button{
+    margin-right: 10px;
+    margin-left: 2px;
+    margin-top: 0;
+    margin-bottom: 0;
+    cursor: pointer;
+
+}
+i.material-icons{
+    padding-top: 1px;
+color: white;
+margin-right: 4px;
+font-size: 18px;
+cursor: pointer;
+}
+
+i.material-icons.menu{
+    text-decoration: none;
+    color: white;
+    list-style: none;
+    text-decoration: none;
+}
+ul.menu{
+    list-style: none;
+    text-decoration: none;
+}
+
+@media screen and (min-width:768px) {
+    i.material-icons.menu{display: none; visibility: hidden;}
+}
+@media screen and (max-width:768px){
+    i.material-icons.menu{display:contents;visibility: visible;}
+    .nav-list.right{
+        display: none;visibility: hidden;
+    }
+    ul.menu{
+        display: flex;justify-content: flex-end;width: 50%;
+    }
+}
+
+
+

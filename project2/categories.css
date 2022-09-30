@@ -1,0 +1,23 @@
+.categories{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 230px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.categories a{
+    background-color:#34568b ;
+    padding: 1em;
+    margin: 10px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.categories a:hover{
+    background-color: #3e8e41;
+}
+.categories a:active{
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px); 
+}
